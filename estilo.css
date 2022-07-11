@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing:border-box
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} 
+
+body {
+  background-image: url(swirl_pattern.webp);
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+h1, h2, p{
+	text-align: center;
+	margin: 0px;
+    padding: 0px;
+	line-height: 1.6;
+	margin: 10px 10px 10px 10px
+}
+
+.centralizado {
+  text-align: center;
+}
+
+.centralizado div {
+  display: inline-block;
+  text-align: center;
+  padding: 30px
+}
+
+.header {
+	position: fixed;
+	z-index : 99;
+	top: 0%;
+    width: 100%;
+}
+
+#menu-h{
+	text-align: center;
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+	text-align: center;
+    /*max-width: 1000px;*/
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+	text-align: center;
+    display: inline-block;
+}
+
+#menu-h ul li a {
+	text-align: center;
+    color: #FFF;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+	text-align: center;
+    background-color: rgb(24, 139, 233);
+}
+
+/*
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+*/
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
